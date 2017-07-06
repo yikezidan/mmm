@@ -1,0 +1,91 @@
+// nav B
+#nav {
+    height: 38px;
+    line-height: 38px;
+    background-color: #ebebeb;
+    padding: 0 10px;
+    span {
+        &:after {
+            content: ">"
+        }
+    }
+    >a {
+        display: block;
+        float: right;
+        height: 28px;
+        line-height: 28px;
+        background-color: #d0d0d0;
+        margin-top: 4px;
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+}
+
+// nav E
+// productlist B
+#productlist {
+    ul {
+        li {
+            position: relative;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            a {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0; // 防止后边的元素层级高
+                z-index: 2;
+            }
+            .pic {
+                float: left;
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .text {
+                padding-left: 110px;
+                h5 {
+                    margin-bottom: 0;
+                    margin-top: 0;
+                    font-size: 14px;
+                    min-height: 44px;
+                    line-height: 22px; // 自动换行
+                    word-break: break-all;
+                }
+                .price {
+                    color: red;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+                .other {
+                    color: #a1a1a1;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .page {
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        span {
+            width: 33.33%;
+            float: left;
+            >a {
+                height: 33px;
+                line-height: 33px;
+                background-color: #ccc;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+        }
+        #select {
+            height: 33px;
+            padding: 0 17px;
+        }
+    }
+}
+
+// productlist E
